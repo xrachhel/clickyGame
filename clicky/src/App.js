@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
-import Wrapper from "./components/Wrapper";
+import Navbar from "./components/Navbar/Navbar";
+import Card from "./components/Card/Card";
+import Wrapper from "./components/Wrapper/Wrapper";
 import images from "./images.json"
+import "./App.css"
 
 class App extends Component {
   state = {
@@ -13,22 +14,35 @@ class App extends Component {
     text: "Take a Guess!"
   }
 
+ 
+
   clickMe = id => {
     if(this.state.clicked.includes(id)){
       this.setState({text:"You got sent home :("})
       if(this.state.highScore < this.state.score){
         this.setState({highScore: this.state.score})
-      }
+      };
       this.setState({clicked: []})
-      this.setState(score: 0)
+      this.setState({score: 0})
     }
     else{
       this.setState({text: "You got a rose!"})
       this.setState({score: this.state.score + 1})
       this.setState({clicked: [...this.state.clicked, id]})
-    }
+    };
 
-  }
+    const newClicked = this.state.images
+    this.shuffleImages(newClicked)
+
+  };
+  shuffleImages = newClicked => {
+    for(var i = newClicked.length -1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i +1))
+      const temp = newClicked[i];
+      newClicked[i] = newClicked[j]
+      newClicked[j] = temp
+    };
+  };
 
   render() {
     return (
