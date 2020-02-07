@@ -3,3 +3,7 @@ img{
     width: 160px;
     border-radius: 50%;
 }
+.card{
+    background-color: #7A0A07;
+    border: none;
+}
