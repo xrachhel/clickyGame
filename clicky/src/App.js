@@ -35,6 +35,7 @@ class App extends Component {
     this.shuffleImages(newClicked)
 
   };
+  
   shuffleImages = newClicked => {
     for(var i = newClicked.length -1; i > 0; i--){
       const j = Math.floor(Math.random() * (i +1))
