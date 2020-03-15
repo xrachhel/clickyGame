@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css"
 
+// Passing props for high score and current score
 function Navbar(props){
     return(
         <div>
@@ -11,7 +12,7 @@ function Navbar(props){
             </nav>
 
         </div>
-    )
-}
+    );
+};
 
 export default Navbar;

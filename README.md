@@ -1,24 +1,21 @@
 # Clicky Game
 
-## Description
 The Clicky Game is a memory game created with React. The application renders a set of different images, and the user's job is to try to click on each image only once. Once an image is clicked, all the images are shuffled and if it is an image not previously clicked, the user gets 1 point. If the same image is clicked more than once, the user loses and their score is reset.
+
+![gif](images/demo.gif)
 
 ## Demo
 In the project directory, you can run 
 ### `npm start`
 or navigate in your browser to:
 
-[https://xrachhel.github.io/clickyGame/
-](https://xrachhel.github.io/clickyGame/
-)
-
-![gif](images/demo.gif)
+[View Live Site](https://xrachhel.github.io/clickyGame/)
 
 ## Technologies Used
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): used for structuring and creating elements on the DOM
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): used to style html elements on the page
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): high level programming language
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): used to create responsive, interactive elements on the page
 * [Node.js](https://developer.mozilla.org/en-US/docs/Web/API/Node): JavaScript runtime, allows users to run JavaScript on the server
 * [React](https://reactjs.org/): JavaScript library for building user interfaces
 
@@ -41,7 +38,7 @@ This portion of the script file displays the function that shuffles the images w
 ## Authors
 
 **Rachel Yeung**
-* [Portfolio](https://xrachhel.github.io/updatedPortfolio/)
+* [Portfolio](https://rachelyeung.herokuapp.com/)
 * [Github](https://github.com/xrachhel)
 * [LinkedIn](https://www.linkedin.com/in/rachel-yeung-814986159/)
 
